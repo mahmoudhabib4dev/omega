@@ -13,7 +13,7 @@
 <body>
 
     <!-- Pro Animated Fixed Navbar -->
-    <nav class="navbar navbar-expand-md fixed-top omega-navbar py-2">
+    <nav id="navbar" class="navbar navbar-expand-md fixed-top omega-navbar py-2">
         <div class="container">
 
             <!-- 1. Brand / Logo (Strictly on the Right side in RTL) -->
@@ -59,6 +59,46 @@
             </div>
         </div>
     </nav>
+
+    <!-- 3 Sections Under the Navbar (Each 35% Height) -->
+    <main>
+        <section class="hero-section section-1">
+            <div class="container text-center">
+                <h1>القسم الأول (35٪ ارتفاع)</h1>
+            </div>
+        </section>
+
+        <section class="hero-section section-2">
+            <div class="container text-center">
+                <h2>القسم الثاني (35٪ ارتفاع)</h2>
+            </div>
+        </section>
+
+        <section class="hero-section section-3">
+            <div class="container text-center">
+                <h3>القسم الثالث (35٪ ارتفاع)</h3>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (50% Height, matches navbar styling) -->
+    <footer class="omega-footer">
+        <div class="container text-center">
+            <p class="text-muted fw-semibold mb-0">جميع حقوق النشر محفوظة © Omega 2026</p>
+        </div>
+    </footer>
+
+    <!-- Scroll Script to Make Navbar Transparent on Scroll -->
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 
 </body>
 
