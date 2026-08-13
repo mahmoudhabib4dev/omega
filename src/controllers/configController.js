@@ -9,7 +9,7 @@ const landingPageConfig = {
     },
     header: {
         logo: {
-            text: 'OmegaLearn',
+            text: 'Omega',
             imageUrl: 'https://assets.omegalearn.com/logo.svg',
             redirectUrl: '/',
         },
@@ -37,6 +37,7 @@ const landingPageConfig = {
 
 
 const getLandingConfig = (req, res) => {
+   
   res.status(200).json({
     status: 'success',
     data: landingPageConfig,
