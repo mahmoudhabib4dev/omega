@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap');
+
+body {
+    background-color: rgba(248, 249, 250, 0.85);
+    font-family: 'Readex Pro', system-ui, -apple-system, sans-serif;
+}
+
+
+
+ul {
+    margin: 0px;
+    padding: 0px 20px;
+    list-style-type: none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+ul li a {
+    display: block;
+    color: #0B4DA2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.logo-img {
+    height: 75px;
+    width: 75px;
+}
+
+ul li a:hover {
+    color: #083b7c;
+    background-color: rgba(11, 77, 162, 0.08);
+    transform: translateY(-1px);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.nav-sign-item {
+    margin-right: auto;
+}
+
+
+ul li a.btn-sign {
+    background-color: #0B4DA2;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 8px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.spacer-nav-item {
+    display: none;
+}
+
+
+.mobile-dropdown {
+    display: none;
+    /* Hidden on desktop */
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    padding: 15px 0;
+
+    /* Animation initial state (hidden & shifted up) */
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+    transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mobile-dropdown a {
+    display: block;
+ padding: 14px 24px;
+    color: #0B4DA2;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.mobile-dropdown a:hover {
+    background-color: rgba(11, 77, 162, 0.06);
+}
+
+.mobile-dropdown a.btn-sign-mobile {
+    margin: 10px 20px 0;
+    background-color: #0B4DA2;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+@media (max-width:768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navbar-item {
+        display: none;
+    }
+
+    .nav-sign-item {
+        margin-right: auto;
+    }
+
+    .logo-img {
+        margin-left: auto;
+    }
+
+    .spacer-nav-item {
+        display: block;
+        width: 80%;
+    }
+
+   .mobile-dropdown.active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+        display: block;
+    }
+}

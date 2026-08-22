@@ -1,105 +1,16 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/bootstrap.bundle.min.js" defer></script>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/landing-page.css">
-    <title>Omega</title>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <script src="./js/navbar-loader.js"></script>
+    <title>OMEGA</title>
 </head>
 
 <body>
-
-    <!-- Pro Animated Fixed Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-md fixed-top omega-navbar py-2">
-        <div class="container">
-
-            <!-- 1. Brand / Logo (Strictly on the Right side in RTL) -->
-            <a class="navbar-brand py-0" href="#">
-                <img src="./assets/images/logo.png" alt="Omega Logo" width="75" height="70" class="d-inline-block align-middle">
-            </a>
-
-            <!-- Mobile Toggle Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navbar Content Container -->
-            <div class="collapse navbar-collapse" id="navbarContent">
-
-                <!-- 2. Menu Links (Centered on Desktop, natural on mobile) -->
-                <ul class="navbar-nav mx-md-auto mb-2 mb-md-0 gap-4 fw-semibold align-items-md-center">
-                    <li class="nav-item">
-                        <a class="nav-link active text-dark" href="#">الرئيسية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-muted" href="#">دوراتنا</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-muted" href="#">من نحن</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-muted" href="#">اتصل بنا</a>
-                    </li>
-                </ul>
-
-                <!-- 3. Action Area: Globe Icon & Button (Pinned to Far Left on Desktop) -->
-                <div class="d-flex align-items-center gap-4 mt-3 mt-md-0">
-                    <!-- Globe Icon -->
-                    <a href="#" class="text-secondary hover-dark">
-                        <img src="./assets/svgs/globe.svg" alt="Language" width="22" height="22">
-                    </a>
-
-                    <!-- Join Us Button -->
-                    <a href="#" class="btn btn-omega rounded-pill px-4 text-white">انضم إلينا</a>
-                </div>
-
-            </div>
-        </div>
-    </nav>
-
-    <!-- 3 Sections Under the Navbar (Each 35% Height) -->
-    <main>
-        <section class="hero-section section-1">
-            <div class="container text-center">
-                <h1>القسم الأول (35٪ ارتفاع)</h1>
-            </div>
-        </section>
-
-        <section class="hero-section section-2">
-            <div class="container text-center">
-                <h2>القسم الثاني (35٪ ارتفاع)</h2>
-            </div>
-        </section>
-
-        <section class="hero-section section-3">
-            <div class="container text-center">
-                <h3>القسم الثالث (35٪ ارتفاع)</h3>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer (50% Height, matches navbar styling) -->
-    <footer class="omega-footer">
-        <div class="container text-center">
-            <p class="text-muted fw-semibold mb-0">جميع حقوق النشر محفوظة © Omega 2026</p>
-        </div>
-    </footer>
-
-    <!-- Scroll Script to Make Navbar Transparent on Scroll -->
-    <script>
-        window.addEventListener('scroll', function () {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-    </script>
-
+   <div id="navbar"></div>
 </body>
 
 </html>

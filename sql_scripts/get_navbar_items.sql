@@ -1,0 +1,1 @@
+SELECT * FROM navbar_items;
